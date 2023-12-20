@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ao.e_commerce.views.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/loginToBase"
+            app:destination="@id/baseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.ao.e_commerce.views.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_baseFragment"
+            app:destination="@id/baseFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.ao.e_commerce.views.fragments.CategoriesFragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" >
+        <argument
+            android:name="category"
+            app:argType="com.ao.e_commerce.models.CategoriesCardModel" />
+        <action
+            android:id="@+id/categoriesToProductDetail"
+            app:destination="@id/productsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/baseFragment"
+        android:name="com.ao.e_commerce.views.fragments.BaseFragment"
+        android:label="fragment_base"
+        tools:layout="@layout/fragment_base" >
+        <action
+            android:id="@+id/baseToCategories"
+            app:destination="@id/categoriesFragment" />
+        <action
+            android:id="@+id/baseToDetail"
+            app:destination="@id/productsDetailFragment" />
+        <action
+            android:id="@+id/baseToOrders"
+            app:destination="@id/ordersFragment" />
+        <action
+            android:id="@+id/baseToProfileUpdate"
+            app:destination="@id/profileUpdateFragment" />
+        <action
+            android:id="@+id/baseToProfile"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/baseToProfileAddress"
+            app:destination="@id/profileAddressFragment" />
+        <action
+            android:id="@+id/baseToProfileDetails"
+            app:destination="@id/profileDetailsFragment" />
+        <action
+            android:id="@+id/baseToPaymentMethods"
+            app:destination="@id/profilePaymentMethodsFragment" />
+        <action
+            android:id="@+id/profileToSplash"
+            app:destination="@id/splashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productsDetailFragment"
+        android:name="com.ao.e_commerce.views.fragments.ProductsDetailFragment"
+        android:label="fragment_products_detail"
+        tools:layout="@layout/fragment_products_detail" >
+        <argument
+            android:name="product"
+            app:argType="com.ao.e_commerce.models.Product" />
+        <action
+            android:id="@+id/productDetailToFavorite"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.ao.e_commerce.views.fragments.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <argument
+            android:name="products"
+            app:argType="com.ao.e_commerce.models.Products" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.ao.e_commerce.views.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <argument
+            android:name="users"
+            app:argType="com.ao.e_commerce.models.user.Users" />
+    </fragment>
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.ao.e_commerce.views.fragments.OrdersFragment"
+        android:label="fragment_orders"
+        tools:layout="@layout/fragment_orders" />
+    <fragment
+        android:id="@+id/profileUpdateFragment"
+        android:name="com.ao.e_commerce.views.fragments.ProfileUpdateFragment"
+        android:label="fragment_profile_update"
+        tools:layout="@layout/fragment_profile_update" />
+    <fragment
+        android:id="@+id/profileAddressFragment"
+        android:name="com.ao.e_commerce.views.fragments.ProfileAddressFragment"
+        android:label="fragment_profile_address"
+        tools:layout="@layout/fragment_profile_address" />
+    <fragment
+        android:id="@+id/profileDetailsFragment"
+        android:name="com.ao.e_commerce.views.fragments.ProfileDetailsFragment"
+        android:label="fragment_profile_details"
+        tools:layout="@layout/fragment_profile_details" />
+    <fragment
+        android:id="@+id/profilePaymentMethodsFragment"
+        android:name="com.ao.e_commerce.views.fragments.ProfilePaymentMethodsFragment"
+        android:label="fragment_profile_payment_methods"
+        tools:layout="@layout/fragment_profile_payment_methods" />
+</navigation>

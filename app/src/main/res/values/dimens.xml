@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="profile_image_size">64dp</dimen>
+    <dimen name="profile_image_size_large">94dp</dimen>
+    <dimen name="bottom_nav_bar_radius">19dp</dimen>
+    <dimen name="button_radius">19dp</dimen>
+    <dimen name="button_height">67dp</dimen>
+    <dimen name="button_text_size">18sp</dimen>
+    <dimen name="toolbar_height">60dp</dimen>
+    <dimen name="home_category_chip_height">52dp</dimen>
+    <dimen name="searchbar_radius">15dp</dimen>
+    <dimen name="listview_bottom_padding">94dp</dimen>
+    <dimen name="home_product_card_radius">18dp</dimen>
+    <dimen name="toolbar_title_size">20sp</dimen>
+    <dimen name="toolbar_icon_size">25dp</dimen>
+    <dimen name="bottombar_bottom_padding">94dp</dimen>
+    <dimen name="splash_logo_size">48dp</dimen>
+    <dimen name="splash_text_size">44dp</dimen>
+</resources>

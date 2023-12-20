@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Nagihan Arabaci</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="exit">Exit</string>
+    <string name="login">Login</string>
+    <string name="new_account_create">Don’t have an account? Create</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="login_subtitle">Login to your account</string>
+    <string name="login_title">Hello</string>
+    <string name="shop">Shop</string>
+    <string name="categories">Categories</string>
+    <string name="choose_location">Choose location..</string>
+    <string name="cart_button_text">Go to checkout</string>
+    <string name="cart_title">My Cart</string>
+    <string name="favorite_title">Favorite</string>
+    <string name="search">Search...</string>
+    <string name="profile_update">Profile Update</string>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="mainText">#262626</color>
+    <color name="icColor">#9A9A9A</color>
+    <color name="lightGrey">#FFF0F0F0</color>
+    <color name="primary">#53B175</color>
+    <color name="error">#F01F0E</color>
+    <color name="lightAccentGrey">#FFF2F3F2</color>
+    <color name="subTextColor">#FF7C7C7C</color>
+    <color name="edit_text_border_color">#FFE2E2E2</color>
+    <color name="text_title_color">#FF181725</color>
+    <color name="text_subtitle_color">#FF7C7C7C</color>
+    <color name="transparent">#00000000</color>
+
+</resources>

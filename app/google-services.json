@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "120915384726",
+    "project_id": "fcmpushnotification-11094",
+    "storage_bucket": "fcmpushnotification-11094.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120915384726:android:65966d1ce9cfc0822fa5b7",
+        "android_client_info": {
+          "package_name": "com.ao.e_commerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlLuZMshe3pQd5v-OtVwbuGiOmw1mhr7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
